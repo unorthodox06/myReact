@@ -36,5 +36,5 @@ const HeadingComponent2 = () => {
 // const heading = React.createElement("h1", { id: "heading" }, "hello this is also me");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<HeadingComponent2 />);
-root.render
+// root.render(jsxHeading)
 // root.render(parent);
