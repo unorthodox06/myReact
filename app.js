@@ -2,7 +2,12 @@ import React from "react";
 import ReactDOM from 'react-dom';
 
 //react element
-const JsxHeading = () => (
+const jsxHeading = (
+<h1 className="head">
+    hello this is heading in jsx
+    </h1>);
+
+const Title = () => (
     <h1 className="heading">
         hello this is me Aniket
     </h1>);
@@ -11,8 +16,8 @@ const JsxHeading = () => (
 //react component way 1
 const HeadingComponent1 = () => (
     <div className="container">
-        <JsxHeading />
-        <h1 className="first" > this is the component 1</h1>
+        <Title />
+        <h1 className="first" > this is component 1</h1>
     </div>
 
 );
@@ -22,7 +27,7 @@ const HeadingComponent1 = () => (
 const HeadingComponent2 = () => {
 
     return <div id="container">
-        <JsxHeading />
+        <HeadingComponent1 />
         <h1 className="second">this is component 2</h1>
     </div>
 
@@ -31,4 +36,5 @@ const HeadingComponent2 = () => {
 // const heading = React.createElement("h1", { id: "heading" }, "hello this is also me");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<HeadingComponent2 />);
+root.render
 // root.render(parent);
