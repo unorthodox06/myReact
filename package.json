@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is My React ",
   "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "keywords": [
@@ -20,6 +22,6 @@
   },
   "browserslist": [
     "last 2 Chrome version",
-    "last 2 irefox version"
+    "last 2 Firefox version"
   ]
 }

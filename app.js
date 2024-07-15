@@ -1,11 +1,34 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 
-const parent = React.createElement("div", { id: "heading" }, React.createElement("div", { id: "child" }, [React.createElement("h1", {}, "I'm Aniket Kalaskar , 😍"),React.createElement("h2", {}, "I'm h2 tag")]));
+//react element
+const JsxHeading = () => (
+    <h1 className="heading">
+        hello this is me Aniket
+    </h1>);
 
 
-console.log(parent);
+//react component way 1
+const HeadingComponent1 = () => (
+    <div className="container">
+        <JsxHeading />
+        <h1 className="first" > this is the component 1</h1>
+    </div>
 
+);
+
+//react component way 2
+
+const HeadingComponent2 = () => {
+
+    return <div id="container">
+        <JsxHeading />
+        <h1 className="second">this is component 2</h1>
+    </div>
+
+};
+
+// const heading = React.createElement("h1", { id: "heading" }, "hello this is also me");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<HeadingComponent2 />);
 // root.render(parent);
