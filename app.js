@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 //react element
 const jsxHeading = (
@@ -26,10 +26,13 @@ const HeadingComponent1 = () => (
 
 const HeadingComponent2 = () => {
 
-    return <div id="container">
+    return ( <div id="container">
         <HeadingComponent1 />
+        {54 + 34}
+        {/* react element inside a component */}
+        {jsxHeading}   
         <h1 className="second">this is component 2</h1>
-    </div>
+    </div>);
 
 };
 
